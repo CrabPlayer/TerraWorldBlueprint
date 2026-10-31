@@ -110,7 +110,7 @@ UI: {
 	MagicStorageOff: Magic Storage: off
 	SourcesHint: Pull materials and building take from these, in order: inventory, then Piggy Bank, Safe, Defender's Forge and Void Vault, then the nearest Magic Storage network. Favourited items are never taken.
 	SourcesHintNoMagicStorage: Pull materials and building take from these, in order: inventory, then Piggy Bank, Safe, Defender's Forge and Void Vault. Favourited items are never taken.
-	InSources: "(+{0} available)"
+	InSources: (+{0} available)
 	BuildNow: Build now
 	Withdraw: Withdraw
 	Unlink: Unlink

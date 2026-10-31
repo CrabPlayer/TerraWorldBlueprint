@@ -1,0 +1,6 @@
+displayName = TerraWorld Blueprints
+author = TerraWorld.dev
+version = 0.1.0
+homepage = https://terraworld.dev/structure-studio
+side = Both
+buildIgnore = *.csproj, *.md, bin\*, obj\*, .gitignore, description_workshop.txt, icon_workshop.png, workshop.json

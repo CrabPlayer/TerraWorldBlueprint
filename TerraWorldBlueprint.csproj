@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- tModLoader writes this file into ModSources when you open Workshop > Develop Mods once. -->
+  <PropertyGroup>
+    <tMLTargets Condition="'$(tMLTargets)' == ''">$(USERPROFILE)\Documents\My Games\Terraria\tModLoader\ModSources\tModLoader.targets</tMLTargets>
+  </PropertyGroup>
+  <Import Project="$(tMLTargets)" />
+  <PropertyGroup>
+    <AssemblyName>TerraWorldBlueprint</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+</Project>

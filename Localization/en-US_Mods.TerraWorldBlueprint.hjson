@@ -1,0 +1,120 @@
+Items: {
+	BlueprintTablet: {
+		DisplayName: Blueprint Tablet
+		Tooltip:
+			'''
+			Right-click to choose a TerraWorld blueprint (.twpack)
+			Left-click to project it at the cursor (cursor = bottom centre)
+			Build by hand following the ghost, or link a Blueprint Builder
+			'''
+	}
+
+	BlueprintBuilderItem: {
+		DisplayName: Blueprint Builder
+		Tooltip:
+			'''
+			Right-click to link it to a projected blueprint
+			Deposit materials; once everything is in, it builds the structure
+			'''
+	}
+}
+
+Tiles.BlueprintBuilderTile.MapEntry: Blueprint Builder
+
+Keybinds: {
+	LayerUp.DisplayName: Blueprint layer up
+	LayerDown.DisplayName: Blueprint layer down
+}
+
+Configs: {
+	BlueprintConfig: {
+		DisplayName: TerraWorld Blueprints
+
+		PlaceUnobtainableForFree: {
+			Label: Place tiles with no item for free
+			Tooltip: Grass, pots, natural walls and similar tiles have no item to pay with. When off they are skipped.
+		}
+
+		PlaceLiquids: {
+			Label: Place liquids
+			Tooltip: Each liquid cell costs one water, lava or honey bucket.
+		}
+
+		BuildStepsPerSecond: {
+			Label: Build speed (cells per second)
+			Tooltip: How fast the Blueprint Builder places paid-for cells.
+		}
+
+		GhostOpacity: {
+			Label: Ghost opacity
+			Tooltip: Opacity of projected blueprints, in percent.
+		}
+	}
+}
+
+Messages: {
+	NoBlueprintSelected: Right-click the Blueprint Tablet to choose a blueprint first.
+	Projected: Projected {0} at {1}, {2}.
+	BuildFinished: Finished building {0}: placed {1} cells, {2} still waiting for materials.
+}
+
+UI: {
+	TabletTitle: Blueprints
+	BuilderTitle: Blueprint Builder
+	OpenFolder: Open folder
+	Reload: Reload
+	GhostsOn: Ghosts: on
+	GhostsOff: Ghosts: off
+	BlueprintsHeading: Blueprint files
+	NoBlueprints: No .twpack files yet. Export one from terraworld.dev/structure-studio and put it in {0}
+	MissingContent: Needs mods that are not loaded: {0}
+	PlaceHint: Close this panel and left-click with the tablet to project the selected blueprint. The cursor preview goes away once it is placed; pick the blueprint again to place another copy.
+	TilesOn: Blocks: on
+	TilesOff: Blocks: off
+	WallsOn: Walls: on
+	WallsOff: Walls: off
+	LiquidsOn: Liquids: on
+	LiquidsOff: Liquids: off
+	LayersHeading: Build layer by layer
+	LayersOnButton: Layers: on
+	LayersOffButton: Layers: off
+	RowsPerLayer: Rows: {0}
+	LowestUnfinished: Lowest unfinished
+	LayerDown: Down
+	LayerUp: Up
+	LayerStatus: Layer {0} of {1} ({2} rows each)
+	LayersOff: Layer view off: showing the whole blueprint.
+	LayerHint: Layers count from the bottom of the nearest projection. PageUp and PageDown step through them (Controls, Mod keybinds).
+	HoverCount: "{0}   {1} / {2}"
+	HoverBlocked: "{0}: blocked, clear this cell"
+	HoverNoItem: "{0}: no item places this, skipped"
+	ProjectionsHeading: Projected in this world
+	NoProjections: Nothing projected yet. Use the Blueprint Tablet.
+	Remove: Remove
+	SinglePlayerOnly: The Blueprint Builder only works in single-player in this version. Ghost projections still work for building by hand.
+	LinkHeading: Choose a projection to build
+	Linked: Building: {0}
+	Progress: Done {0} of {1} steps
+	Blocked: "{0} cells are blocked by other blocks or walls. Clear them to continue."
+	Unobtainable: "{0} cells have no item that places them and will be skipped."
+	Building: Building...
+	Deposit: Pull materials
+	OpenTerraWorld: Open TerraWorld
+	OpenStructureStudio: Open Structure Studio
+	SourcesHeading: Take materials from
+	InventoryOn: Inventory: on
+	InventoryOff: Inventory: off
+	BanksOn: Piggy Bank etc.: on
+	BanksOff: Piggy Bank etc.: off
+	MagicStorageOn: Magic Storage: on
+	MagicStorageOff: Magic Storage: off
+	SourcesHint: Pull materials and building take from these, in order: inventory, then Piggy Bank, Safe, Defender's Forge and Void Vault, then the nearest Magic Storage network. Favourited items are never taken.
+	SourcesHintNoMagicStorage: Pull materials and building take from these, in order: inventory, then Piggy Bank, Safe, Defender's Forge and Void Vault. Favourited items are never taken.
+	InSources: "(+{0} available)"
+	BuildNow: Build now
+	Withdraw: Withdraw
+	Unlink: Unlink
+	MaterialsHeading: Materials (stored / needed)
+	Complete: The structure is complete.
+	NothingToPay: Nothing left to pay for. Press Build now.
+}

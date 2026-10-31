@@ -1,0 +1,8 @@
+Bring structures designed in TerraWorld Structure Studio (https://terraworld.dev/structure-studio) into your world.
+
+1. Export a .twpack from Structure Studio and drop it into Documents/My Games/Terraria/tModLoader/TerraWorldBlueprints.
+2. Craft a Blueprint Tablet (10 Wood at a Work Bench). Right-click it to choose a blueprint, left-click to project a ghost frame into the world.
+3. Build by hand following the ghost, or craft a Blueprint Builder, link it to the projection, deposit the materials and it builds the structure for you once everything is there.
+
+Chest contents are never copied: only blocks, walls, furniture, paint, coatings, wires and actuators, each paid for with the real item.
+The Blueprint Builder works in single-player in this version.
